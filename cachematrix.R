@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## cashematrix.R consists of two functions makeCacheMatrix(x) and cacheSolve(x)
 ## to compute and save inverse of invertible matrices. makeCacheMatrix function 
 ## creates a list of functions that store in cache and retrieve from cache, 
@@ -30,7 +27,10 @@ makeCacheMatrix <- function(x = matrix()) {
     }
 
     
-## Write a short comment describing this function
+## cacheSolve returns inverse of a given matrix. If the inverse is already stored 
+## in cache in a list associated with this matrix, retrieves the inverse from cache.
+## otherwise, it computes the inverse and stores that in cache in the list associated with this matrix
+## using the list of fucntions defined for x using makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
